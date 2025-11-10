@@ -46,13 +46,16 @@ sympy==1.13.1
 telegram==0.0.1
 threadpoolctl==3.5.0
 torch==2.5.1
+torchvision
 # torchvision==0.20.1
 tornado==6.4.2
 tqdm==4.67.1
 typing_extensions==4.12.2
 tzdata==2024.2
 tzlocal==5.2
-ultralytics==8.3.59
+ultralytics
+# ultralytics==8.3.59
 ultralytics-thop==2.0.13
 urllib3==2.3.0
+
 
