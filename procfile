@@ -1,1 +1,1 @@
-bot: python telebot.py
+bot: python app.py
