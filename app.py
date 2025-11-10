@@ -2,6 +2,7 @@ import telebot_chat as nn
 from telebot_chat import get_response
 
 import logging
+import os
 from telegram import ReplyKeyboardMarkup
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 # from telegram import InlineKeyboardButton, InlineKeyboardMarkup
@@ -14,6 +15,8 @@ logging.info('Starting Bot...')
 logger = logging.getLogger(__name__)
 
 API_KEY = "6778822834:AAEsnemAro7l7tl0SBWEbdzhz8oGOJ_UDwo"
+
+TELEGRAM_API_KEY: str = os.getenv('TELEGRAM_TOKEN')
 
 # Commands
 def start_command(update, context):
@@ -50,7 +53,7 @@ def error (update, context):
 
 # if __name__ == '__main__':
 def main():
-    updater = Updater(API_KEY, use_context=True)
+    updater = Updater(TELEGRAM_API_KEY, use_context=True)
     dp = updater.dispatcher
 
     # Commands
@@ -70,3 +73,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
